@@ -1,3 +1,4 @@
+/*참고용으로 .. */
 {
   "compilerOptions": {
     /* Basic Options */

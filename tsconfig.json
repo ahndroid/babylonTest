@@ -14,7 +14,8 @@
     "types": [
       "babylonjs",
       "babylonjs-gui",
-      "babylonjs-materials"
+      "babylonjs-materials",
+      "cannon"
     ],
     "lib": [
       "es2016",

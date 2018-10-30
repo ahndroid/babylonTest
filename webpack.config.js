@@ -12,14 +12,21 @@ const distFolder = "./dist";
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.ts',
+  entry: { 
+      
+      take1 : './src/take1/take1.ts'
+    },
   plugins: [
     new CleanWebpackPlugin([distFolder]),
+    
     new HtmlWebpackPlugin({
-      template: 'src/index.ejs'
-    }),
+        filename : 'take1/index.html',
+        title : 'Take 1',
+        template: 'src/take1/index.ejs'
+      }),
     new CopyWebpackPlugin([
-      { from: 'src/assets', to: 'assets' },
+      { from: 'src/take1/assets', to: 'take1/assets' },
+      { from : 'src/index.html' , to: 'index.html' }
     ])
   ],
   devtool: 'inline-source-map',

@@ -65,3 +65,4 @@ dist
 .vscode
 .idea
 *.iml
+tsconfig_defalut_4_reference.js
