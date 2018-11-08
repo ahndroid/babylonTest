@@ -1,0 +1,25 @@
+{
+  /* tsc 컴파일러 옵션들  */
+  "compilerOptions": {
+      
+    /* 컴파일 후 아웃풋 폴더 */
+    "outDir": "./dist/",
+    /* .map 파일 생성*/
+    "sourceMap": true,
+    /* 암시적인 any 사용시 에러 발생*/
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "allowJs": true,
+    "types": [
+      "babylonjs",
+      "babylonjs-gui",
+      "babylonjs-materials",
+      "cannon"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
+}
