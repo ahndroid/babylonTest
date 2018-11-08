@@ -7,8 +7,10 @@
     "doc": "doc"
   },
   "scripts": {
-    "dev": "webpack --mode=development",
-    "start": "webpack-dev-server --open"
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "startprod": "webpack-dev-server --open --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   }
 }
